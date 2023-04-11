@@ -1,0 +1,39 @@
+
+
+<!--pages/login.wxml-->
+<view class="container"> 
+ 
+ 
+ <view class="register-from"> 
+
+   <!--账号-->
+   <view class="inputView"> 
+     <!-- <image class="nameImage" src="/images/name.png"></image>  -->
+     <label class="registerLab">账号</label> 
+     <input class="inputText"    value="{{username}}"     placeholder="请输入账号" bindinput="usernameInput" /> 
+   </view> 
+   <view class="line"></view> 
+   <!--密码-->
+   <view class="inputView"> 
+     <!-- <image class="keyImage" src="/images/key.png"></image>  -->
+     <label class="registerLab">密码</label> 
+     <input class="inputText" password="true"    value="{{password}}" placeholder="请输入密码" bindinput="passwordInput" /> 
+   </view> 
+   <view class="line"></view> 
+   <!--确认密码-->
+   <view class="inputView"> 
+     <!-- <image class="keyImage" src="/images/key.png"></image>  -->
+     <label class="registerLab">确认密码</label> 
+     <input class="inputText"    value="{{password2}}" password="true" placeholder="请再次输入密码" bindinput="passwordInput2" /> 
+   </view> 
+    
+ 
+    <!--注册-->
+   <view class="registerBtnView"> 
+     <button class="registerBtn" type="primary" bindtap="register">注册</button> 
+   </view> 
+
+ </view> 
+
+</view>
+

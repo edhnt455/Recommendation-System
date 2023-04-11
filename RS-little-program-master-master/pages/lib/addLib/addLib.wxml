@@ -1,0 +1,23 @@
+<!--pages/lib/addLib/addLib.wxml-->
+<cu-custom bgColor="bg-yellow" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">我的题库</view>
+</cu-custom>
+
+<view class='text-black text-df text-lg padding'>
+
+  <view class="cu-form-group solid-bottom">
+    <view class="title">输入名称：</view>
+    <input placeholder="题库名称" id="myInput" maxlength="17" bindinput="getName"></input>
+  </view>
+
+  <view class="margin-top-xl flex flex-direction padding-bottom-xl">
+    <button bindtap="modalTap0" class="cu-btn lg bg-cyan">确认</button>
+    <button class="cu-btn lg bg-yellow margin-tb-xl" bindlongtap="modalTap1">长按恢复默认题库</button>
+  </view>
+  <modal title="{{modalTitle}}" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="modalFirm"
+    bindcancel="modalCancel" bindlongtap="longtap">{{modalMsg}}</modal>
+</view>
+<view style="padding-top: 600rpx;">
+  <ad unit-id="adunit-d30d92fc5babdd3a"></ad>
+</view>

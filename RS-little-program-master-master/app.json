@@ -1,0 +1,56 @@
+{
+  "pages":[
+    
+    "pages/home/home",  
+    "pages/login/login",
+    "pages/introduce/introduce",
+    "pages/learn/learn",    
+    "pages/lib/lins/libs",  
+    "pages/leng_exam/leng_exam", 
+    "pages/index/index",   
+    "pages/logs/logs", 
+    "pages/exam/exam",
+    "pages/recommend/recommend", 
+    "pages/finalexam/finalexam",  
+     
+    "pages/results/results",
+    "pages/select/select", 
+    "pages/lib/libs/libs",
+    "pages/register/register"
+  ],
+  "window":{
+    "backgroundTextStyle": "dark",    
+    "navigationBarBackgroundColor": "#fff",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh":true
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom",
+    "Home": "/pages/home/home",
+    "logs": "/pages/logs/logs"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "image/_Home.png",
+        "selectedIconPath": "image/Home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "image/_Me.png",
+        "selectedIconPath": "image/Me.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}          
+    
